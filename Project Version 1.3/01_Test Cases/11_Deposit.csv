@@ -1,0 +1,68 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC1,Verify Account No Field,Account No accepts only numbers,"1) Enter valid account number in the ""Account No"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC2,Verify Account No Field,Account No cannot be empty,"1) Do not enter a value in ""Account No"" field",,"An error message ""Account No must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC3,Verify Account No Field,Account No can't contains special characters,"1) Enter any special characters the ""Account No"" field","!, @, #, $,","An error message ""Account No can't contain special characters"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC4,Verify Account No Field,Account No can't contains characters,"1) Enter any characters the ""Account No"" field","A, B, C, É","An error message ""Account No can't contain characters"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC5,Verify Amount Field Field,Amount field accepts only numbers,"1) Enter valid amount number in the ""Amount"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC6,Verify Amount Field Field,Amount field cannot be empty,"1) Do not enter a value in ""Amount"" field",,"An error message ""Amount must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC7,Verify Amount Field Field,Amount field can't contains special characters,"1) Enter any special characters the ""Amount"" field","!, @, #, $,","An error message ""Amount can't contain special characters"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC8,Verify Amount Field,Amount field can't contains characters,"1) Enter any characters the ""Amount"" field","A, B, C, É","An error message ""Amount can't contain characters"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC9,Verify Description Field,Description field accepts at least 1 letter or number,"1) Enter at least one character in the ""Description"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC10,Verify Description Field,Description cannot be empty,"1) Do not enter a value in ""Description"" field",,"An error message ""Description must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC11,Verify Submit Button ,Manager/ Customer can make a deposite after entering valid data,"1) Enter a valid ""Account No"" ",,The manager/ customer successfully make a deposit 
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description ,,
+,,,"4) Click on the ""Submit"" button ",,
+,,,,,
+NC12,Verify Submit Button ,Manager/ Customer canâ€™t make a deposite after entering incomplete data,"1) Leave ""Account No"" field empty",,"An error message ""Account No must not be blank"" must shown"
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description ,,
+,,,"4) Click on the ""Submit"" button ",,
+,,,,,
+NC13,Verify Reset Button,Manger/ Customer can reset the Customer ID field,"1) Leave ""Account No"" field empty",,All the data entered must be deleted 
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description ,,
+,,,"4) Click on the ""Reset"" button ",,
+,,,,,
+NC13,Verify Reset Button,Nothing happen when clicking on reset button without entering any data,1) Leave the all the fields empty,,All fields remains empty
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC14,Verify Manager Authority,Manager can't make a deposit if the account no associated to him,"1) Enter a valid ""Account No"" not associated with the manager",,"An error message ""Invalid Account No"" must shown"
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description ,,
+,,,"4) Click on the ""Submit"" button ",,
+,,,,,
+NC15,Verify Manager Authority,Manager can make a deposit if the account no associated to him,"1) Enter a valid ""Account No"" associated with the manager",Accounts No. associated to the manager,Manager can successfully make a deposit
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description ,,
+,,,"4) Click on the ""Submit"" button ",,
+,,,,,
+NC16,Verify Customer Authority,Customer can't make a deposit if the account no associated to him,"1) Enter a valid ""Account No"" not associated with the customer",,"An error message ""Invalid Account No"" must shown"
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description ,,
+,,,"4) Click on the ""Submit"" button ",,
+,,,,,
+NC17,Verify Customer Authority,Customer can make a deposit if the account no associated to him,"1) Enter a valid ""Account No"" not associated with the customer",Accounts No. associated to the customer,Customer can successfully make a deposit
+,,,2) Enter a valid deposit amount,,
+,,,3) Enter a valid description,,
+,,,"4) Click on the ""Submit"" button ",,

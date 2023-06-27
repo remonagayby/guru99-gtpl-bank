@@ -1,0 +1,129 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC1,Verify New Customer Name Field,Name cannot be empty,1) Do not enter a value in NAME Field,,"An error message ""Customer name must not be blank"" must shown"
+,,,2) Press TAB and move to next Field,,
+,,,,,
+NC2,Verify New Customer Name Field,Name can't be numbers,"1) Enter any number in the ""NAME"" field","1, 2, 3 ...","An error message ""Numbers are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC3,Verify New Customer Name Field,Name can't contains special characters,"1) Enter any name contains a special characters the ""NAME"" field","!, @, #, $, %, ^, &, *","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC4,Verify New Customer Name Field,Name first character can't have space,"1) Enter space in the first character of the ""NAME"" field",,"An error message ""First character can not have space"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC5,Verify New Customer Name Field,Name field accepts only letters,"1) Enter valid name in letters in the ""NAME"" field",,The manager moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC6,Verify New Customer Adress Field,Adress cannot be empty,"1) Do not enter a value in ""ADRESS"" field",,"An error message ""Address Field must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC7,Verify New Customer Adress Field,Adress first character can't have space,"1) Enter space in the first character of the ""ADRESS"" field",,"An error message ""First character can not have space"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC8,Verify New Customer Adress Field,Adress can't contains special characters,"1) Enter any adress contains a special characters the ""ADRESS"" field","!, @, #, $, %, ^, &, *","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC9,Verify New Customer Adress Field,Adress field accepts letters and numbers,"1) Enter an adress with letters and numbers in the ""ADRESS"" field",,The manager moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC10,Verify New Customer City Field,City can't contains special characters,"1) Enter any city contains a special characters the ""CITY"" field","!, @, #, $, %, ^, &, *","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC11,Verify New Customer City Field,City cannot be empty,"1) Do not enter a value in ""CITY"" field",,"An error message ""City must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC12,Verify New Customer City Field,City can't be numbers,"1) Enter any number in the ""CITY"" field","1, 2, 3, ..","An error message ""Numbers are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC13,Verify New Customer City Field,City first character can't have space,"1) Enter space in the first character of the ""CITY"" field",,"An error message ""First character can not have space"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC14,Verify New Customer City Field,City field accepts only letters,"1) Enter valid city name in letters in the ""City"" field","A, B, C, ..",The manager moved to the next field successfully
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC15,Verify New Customer State Field,State can't be numbers,"1) Enter any number in the ""STATE"" field","1, 2, 3, ...","An error message ""Numbers are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC16,Verify New Customer State Field,State cannot be empty,"1) Do not enter a value in ""STATE"" field",,"An error message ""State must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC17,Verify New Customer State Field,State can't contains special characters,"1) Enter any state contains a special characters the ""STATE"" field","!, @, #, $, %, ^, &, *","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC18,Verify New Customer State Field,State first character can't have space,"1) Enter space in the first character of the ""STATE"" field",,"An error message ""First character can not have space"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC19,Verify New Customer State Field,State field accepts only letters,"1) Enter valid state in the ""STATE"" field",,The manger moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC20,Verify New Customer PIN Field,PIN can't contains characters,"1) Enter any PIN contains characters the ""PIN"" field","A, B, C, É","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC21,Verify New Customer PIN Field,PIN cannot be empty,"1) Do not enter a value in ""PIN"" field",,"An error message ""PIN must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC22,Verify New Customer PIN Field,PIN first character can't have space,"1) Enter space in the first character in the ""PIN"" field",,"An error message ""First character can not have space"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC23,Verify New Customer PIN Field,PIN Code must have 6 Digits,"1) Enter a valid 6 digits in the ""PIN"" field",,The manager moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC24,Verify New Customer PIN Field,PIN Code must not less than 6 Digits,"1) Enter a valid 5 digits in the ""PIN"" field",,"An error message ""PIN Code must have 6 Digits"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC25,Verify New Customer PIN Field,PIN Code not accept more than 6 Digits,"1) Try to enter more that 6 digits in the ""PIN"" field",,"After the 6th digit, customer canâ€™t add more numbers "
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC26,Verify New Customer PIN Field,PIN cannot be empty,"1) Do not enter a value in ""PIN"" field",,"An error message ""PIN must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC27,Verify New Customer Telephone Number Field,Telephone Number cannot be empty,"1) Do not enter a value in ""TELEPHONE NUMBER"" field",,"An error message ""Telephone Number must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC28,Verify New Customer Telephone Number Field,Telephone Number can't contains special characters,"1) Enter any Telephone Number contains a special characters the ""TELEPHONE NUMBER"" field","!, @, #, $, %, ^, &, *","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC29,Verify New Customer Telephone Number Field,Telephone Number can't contains characters,"1) Enter any Telephone Number contains characters the ""TELEPHONE NUMBER"" field","A, B, C, É","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC30,Verify New Customer Telephone Number Field,Telephone Number first character can't have space,"1) Enter space in the first character in ""TELEPHONE NUMBER"" field",,"An error message ""First character can not have space"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC31,Verify New Customer Telephone Number Field,Enter a valid Telephone Number,"1) Enter valid Telephone Number in the ""TELEPHONE NUMBER"" field",,The manager moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC32,Verify New Customer E mail Field,E mail cannot be empty,"1) Do not enter anything in ""E MAIL"" field",,"An error message ""E mail must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC33,Verify New Customer E mail Field,E mail cannot be invaild,"1) Enter an invalid email (no @) in ""E MAIL"" field",,"An error message ""E mail is not valid"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC34,Verify New Customer E mail Field,Email first character can't have space,"1) Enter space in the first character of the ""E MAIL"" field",,"An error message ""Email-ID is not valid"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC35,Verify New Customer E mail Field,Enter a valid E mail,"1) Enter valid E mail in the ""E MAIL"" field",,The manager moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC36,Verify New Customer E mail Field,Customer E mail not exist on the database ,"1) Enter valid E mail already exist the database in the ""E MAIL"" field",,"An error message ""E mail is already exist"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC37,Verify New Customer Gender Field,Only one Gender field can be selected,"1) Click on the first option in the ""Gender"" field",,"The manager can select only one option ""Male or Female"""
+,,,"2) Click on the second option in the ""Gender"" field",,
+,,,,,
+NC38,Verify New Customer Birth Date ,Date of Birth can't be characters,"1) Enter any birth date contains characters the ""Birth Date"" field","A, B, C, É",Birth date does not accept characters
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC39,Verify New Customer Birth Date ,Date of Birth date must be numbers,"1) Enter a valid birth date in the ""Birth Date"" field",,The manager moved to the next field successfully without error message 
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC40,Verify New Customer Submit Button ,Manager successfully submit the customer data after entering valid data in the New Customer fields ,1) Enter a valid data in all the new customer fields ,,The manager successfully submited his data
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC42,Verify New Customer Submit Button ,Manager can't submit the customer data while all the required fields is empty ,1) Don't enter any data in all the new customer fields ,,"An error message ""Please fill all fields"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC43,Verify New Customer Reset Button,Manger can reset the customer data,1) Enter a valid data in all the new customer fields ,,All the customer data entered in the New Customer fields must be deleted 
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC44,Verify New Customer Reset Button,Nothing happen when clicking on reset button without entering any data in the New Customer fields,1) Don't enter any data in all the new customer fields ,,All the New Customer data fields remains empty
+,,,"2) Click on the ""Reset"" button ",,

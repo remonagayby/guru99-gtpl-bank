@@ -1,0 +1,16 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+NC1,Verify User-ID,User-ID cannot be empty,"1) Leave the ""User-ID"" field empty",,"An error message ""User is not valid"" must shown","An error message ""User is not valid"" must shown",Pass
+,,,"2) Click on ""Login"" button",,,,
+,,,,,,,
+NC2,Verify User-ID,User can login with a valid User-ID & Password,"1) Enter a valid ""User-ID"" ",User-ID: mngr504425,User login successfully ,User login successfully ,Pass
+,,,"2) Enter a valid ""password"" ",Password: edUbydu,,,
+,,,"3) Click on ""Login"" button",,,,
+,,,,,,,
+NC3,Verify Password,Password cannot be empty,"1) Do not enter a value in ""Password"" field",,"An error message ""User is not valid"" must shown","An error message ""User is not valid"" must shown",Pass
+,,,"2) Click on the ""Login"" button",,,,
+,,,,,,,
+NC4,Verify Password,Password must be invisible ,"1) Enter the any password in the ""Password"" ",,The password characters are not visible,The password characters are not visible,Pass
+,,,,,,,
+NC5,Verify Reset Button,User can reset the login data,"1) Enter a valid ""User-ID"" ",,All login data fields cleared,All login data fields cleared,Pass
+,,,"2) Enter a valid ""password"" ",,,,
+,,,"3) Click on ""Reset"" button",,,,

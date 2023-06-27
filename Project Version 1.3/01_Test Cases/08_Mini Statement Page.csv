@@ -1,0 +1,42 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC1,Verify Account No,Account No field accepts valid numbers,"1) Enter valid account number in the ""Account No"" field",,Manger moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC2,Verify Account No,Account No cannot be empty,"1) Do not enter a value in ""Account No"" field",,"An error message ""Account No must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC3,Verify Account No,Account No can't contains special characters,"1) Enter any special characters the ""Account No"" field","!, @, #, $,","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC4,Verify Account No,Account No can't contains characters,"1) Enter any characters the ""Account No"" field","A, B, C, É","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC5,Verify Submit Button ,"Manager/ Customer can view mini statement page entering valid ""Account No""","1) Enter a valid ""Account No"" ",,The manager/ customer successfully can view mini statement page
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC6,Verify Submit Button ,"Manager/ Customer can't view mini statement page entering valid ""Account No"" field is empty ","1) Leave the ""Account No"" field empty",,"An error message ""Please fill all fields"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC7,Verify Reset Button,Manger can reset the Account No field,"1) Enter a valid ""Account No"" associated with the manager ",,All the data entered must be deleted 
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC8,Verify Reset Button,Nothing happen when clicking on reset button without entering any data,"1) Leave the ""Account No"" field empty",,Account No field remains empty
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC9,Verify Manager Authority ,"Manager can view mini statement page if ""Account No"" not associated to him","1) Enter a valid ""Account ID"" associated with the manager  ",Accounts No. associated to the manager,Manager successfully can view mini statement page 
+,,,"2) Click on the ""Submit"" button",,
+,,,,,
+NC10,Verify Customer Authority ,"Customer can't view mini statement page if ""Account No"" not associated to him","1) Enter a valid ""Account ID"" not associated with the customer ",Accounts No. not associated to the manager,"An error message ""Accounts No. associated to the manager"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC11,Verify Customer Authority ,"Customer can view mini statement page if ""Account No"" not associated to him","1) Enter a valid ""Account ID"" associated with the customer ",Accounts No. associated to the customer,Customer successfully can view mini statement page 
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC12,Verify Mini Statement Transactions,Customer account has more than 5 transactions ,"1) Enter a valid ""Account ID"" associated with the manager ",Accounts No. associated to the manager,Manager successfully can view mini statement page with the last 5 transactions 
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC13,Verify Mini Statement Transactions,Customer account has less than 5 transactions ,"1) Enter a valid ""Account ID"" associated with the manager ",Accounts No. associated to the manager,An error message  must shown
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC14,Verify Mini Statement Transactions,Customer account has no transactions ,"1) Enter a valid ""Account ID"" associated with the manager ",Accounts No. associated to the manager,An error message  must shown
+,,,"2) Click on the ""Submit"" button ",,

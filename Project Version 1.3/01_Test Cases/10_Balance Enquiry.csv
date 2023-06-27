@@ -1,0 +1,36 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC1,Verify Account Number ,Account number cannot be empty,"1) Do not enter a value in ""Account Number"" field",,"An error message ""Account Number must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC2,Verify Account Number ,Account number not have special character ,"1) Enter any Account Number contains a special characters the ""Account Number"" field","!, @, #, $, %, ^, &, *","An error message ""Account Number can't contain special characters"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC3,Verify Account Number ,Account number can't contains characters,"1) Enter any Account Number contains characters the ""Account Number"" field","A, B, C, É","An error message ""Account Number can't contain characters"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, É",
+,,,,,
+NC4,Verify Account Number ,Account number contains only numbers,"1) Enter valid numbers in the ""Account Number"" field","1, 2, 3, ...",Manger moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC5,Verify Balance Enquiry Submit Button ,Manager/ Customer can check the customer balance enquiry after entering valid account number ,1) Enter a valid account number ,,Manager/ Customer successfully can view the customer balance enquiry successfully 
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC6,Verify Balance Enquiry Submit Button ,Manager/ Customer can't submit the customer data while all the required fields is empty ,1) Don't enter a valid account number ,,An error message on all the required fields must shown
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC7,Verify Balance Enquiry Reset Button,Manger/ Customer can reset the customer data,1) Enter a valid account number ,,The account number entered must be deleted 
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC8,Verify Balance Enquiry Reset Button,Nothing happen when clicking on reset button without entering any data in the account number field,1) Don't enter any data in the account number field,,All the account number field remains empty
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC9,Verify Manager Authority,Manager can't view customer balance enquiry not associated to him,1) Enter a customer account no. is not associated to the manager ,,"An error message ""Invalid Account No"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC10,Verify Manager Authority,Manager can't view customer balance enquiry not associated to him,1) Enter a customer account no. is associated to the manager  ,Accounts No. associated to the manager,"An error message ""Account does not exist"" must shown"
+,,,"2) Click on the ""Submit"" button",,
+,,,,,
+NC11,Verify Customer Authority,Customer can't view customer balance enquiry not associated to him,1) Enter a customer account no. is not associated to the customer ,,"An error message ""Invalid Account No"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC12,Verify Customer Authority,Customer can view customer balance enquiry not associated to him,1) Enter a customer account no. is associated to the customer ,Accounts No. associated to the customer,Customer can successfully view customer balance enquiry 
+,,,"2) Click on the ""Submit"" button ",,
