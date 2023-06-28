@@ -1,0 +1,6 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail,Severity,Priority,Screenshot Link,Video 
+NC5,Verify Submit Button ,Manager can edit customer account if the account is associated to the manger,"1) Enter a valid ""Account No"" associated with the manager ",Accounts No. associated to the manager,The manager successfully edit customer account,"Page fail ""demo.guru99.com is currently unable to handle this request.""",Fail,Critical,High,,https://drive.google.com/file/d/1r7CzB6e2BjcCxAYoFNL4TxNyxa9DTsI5/view?usp=sharing
+,,,"2) Click on the ""Submit"" button ",,,,,,,,
+,,,,,,,,,,,
+NC9,Verify Manager Authority ,Manager can't edit customer account not associated to him,"1) Enter a valid ""Account No"" not associated with the manager ",,"An error message ""Account does not exist"" must shown","Page fail ""demo.guru99.com is currently unable to handle this request.""",Fail,Critical,High,,https://drive.google.com/file/d/1r7CzB6e2BjcCxAYoFNL4TxNyxa9DTsI5/view?usp=sharing
+,,,"2) Click on the ""Submit"" button ",,,,,,,,

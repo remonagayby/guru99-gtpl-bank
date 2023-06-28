@@ -1,0 +1,12 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail,Severity,Priority,Screenshot
+NC5,Verify Customer ID,Customer ID first character can't have space,"1) Enter space in the first character of the ""Customer ID"" field",,"An error message ""First character can not have space"" must shown","An error message ""First character can not have space"" shown",Pass,,,
+,,,2) Press TAB and move to the next field,,,,,,,
+,,,,,,,,,,
+NC6,Verify Submit Button ,"Manager can delete customer after entering valid ""Customer ID""","1) Enter a valid ""Customer ID"" associated with the manager ",Accounts No. associated to the manager,The manager successfully delete the customer  ,"The customer is deleted, but an error message ""Customer could not be deleted!!!"" shown",Fail,Major,Medium,https://ibb.co/vdHvxXH
+,,,"2) Click on the ""Submit"" button ",,,,,,,
+,,,,,,,,,,
+NC10,Verify Manager Authority ,Manager can't delete customer account not associated to him,"1) Enter a valid ""Customer ID"" not associated with the manager ",,"An error message ""You are not authorize to delete this customer!!"" must shown","An error message ""You are not authorize to delete this customer!!"" shown",Pass,,,
+,,,"2) Click on the ""Submit"" button ",,,,,,,
+,,,,,,,,,,
+NC11,Verify Manager Authority ,Manager can delete an inactive customer current or saving account associated to him,"1) Enter a valid inactive current or saving ""Customer ID"" account associated with the manager ",Accounts No. associated to the manager,"An error message ""Invalid Account No"" must shown","Not applicable to execute the test as there is no valid inactive ""Customer ID"" known",Fail,,,
+,,,"2) Click on the ""Submit"" button ",,,,,,,
