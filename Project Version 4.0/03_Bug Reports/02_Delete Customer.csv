@@ -1,0 +1,3 @@
+TestCase#,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail,Severity,Priority,Screenshot,Video
+NC6,Verify Submit Button ,"Manager can delete customer after entering valid ""Customer ID""","1) Enter a valid ""Customer ID"" associated with the manager ",Accounts No. associated to the manager,The manager successfully delete the customer  ,The manager successfully delete the customer  ,Pass,,,,
+,,,"2) Click on the ""Submit"" button ",,,,,,,,

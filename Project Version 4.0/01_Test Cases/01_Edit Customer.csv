@@ -1,0 +1,8 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC40,Verify Submit Button ,"Manager successfully submit the customer data after entering valid data in the ""Edit Customer"" fields ","1) Edit the customer ""Address""",Accounts No. associated to the manager,The manager successfully edited the customer data
+,,,"2) Edit the customer ""City""",,
+,,,"3) Edit the customer ""State""",,
+,,,"4) Edit the customer ""PIN""",,
+,,,"5) Edit the customer ""Telephone Number""",,
+,,,"6) Edit the customer ""Email Id """,,
+,,,"7) Click on the ""Submit"" button ",,

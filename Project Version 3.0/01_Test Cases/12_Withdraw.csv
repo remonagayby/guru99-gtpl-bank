@@ -1,0 +1,56 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC1,Verify Account No Field,Account No cannot be empty,"1) Do not enter a value in ""Account No"" Field",,"An error message ""Account No must not be blank"" must shown"
+,,,2) Press TAB and move to next Field,,
+,,,,,
+NC2,Verify Account No Field,Account No can't contains special characters,"1) Enter any special characters the ""Account No"" field","!, @, #, $,","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC3,Verify Account No Field,Account No can't contains characters,"1) Enter any characters the ""Account No"" field","A, B, C, …","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, …",
+,,,,,
+NC4,Verify Account No Field,Account No accepts only numbers,"1) Enter valid account number in the ""Account No"" field",,Manger moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC5,Verify Amount Field Field,Amount field cannot be empty,"1) Do not enter a value in ""Amount"" field",,"An error message ""Amount must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC6,Verify Amount Field,Amount field can't contains characters,"1) Enter any characters the ""Amount"" field","A, B, C, …","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, …",
+,,,,,
+NC7,Verify Amount Field Field,Amount field can't contains special characters,"1) Enter any special characters the ""Amount"" field","!, @, #, $,","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field," %, ^, &, *",
+,,,,,
+NC8,Verify Amount Field Field,Amount field accepts only numbers,"1) Enter valid amount number in the ""Amount"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC9,Verify Amount Field Field,Amount must be more than the customer balance ,1) Enter Account No.,,Manager/ Customer can successfully withdraw money from the specified account
+,,,"2)Enter valid amount number more than the customer balance in the ""Amount""",,
+,,,"3) Click on ""Submit"" ",,
+,,,,,
+NC10,Verify Amount Field Field,Amount can't be less than the customer balance ,1) Enter Account No.,,An error message must shown
+,,,"2) Enter valid amount number less than the customer balance in the ""Amount""",,
+,,,"3) Click on ""Submit"" ",,
+,,,,,
+NC11,Verify Description Field,Description field accepts at least 1 letter or number,"1) Enter at least one character in the ""Description"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC12,Verify Description Field,Description cannot be empty,"1) Do not enter a value in ""Description"" field",,"An error message ""Description must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC13,Verify Submit Button ,Manager/ Customer submit the withdraw request after entering valid data in the all the fields ,1) Enter a valid data in all fields ,,Manager/ Customer can successfully withdraw money from the specified account
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC14,Verify Submit Button ,Manager/ Customer can't submit the withdraw request if any of the required fields is empty ,1) Don't enter any data or enter some of the requied fields in the withdraw form,,"An error message ""Please fill all fields"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC15,Verify Manager Authority,Manager can withdraw money from an associated account to him,"1) Enter a valid data in all fields, be sure that the account number is associated to the manager ",Accounts No. associated to the manager,Manager can successfully withdraw money from the specified account
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC16,Verify Manager Authority,Manager can't withdraw money from an account not associated to him,"1) Enter a valid data in all fields, but in the account no. field, enter an account no. is not associated to the manager ",Accounts No. associated to the manager,"An error message ""Account does not exist"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC17,Verify Customer Authority,Customer can withdraw money from his own accounts,"1) Enter a valid data in all fields, be sure that the account number is associated to the customer  ",Accounts No. associated to the customer,Customer can successfully withdraw money from the specified account
+,,,"2) Click on the ""Submit"" button",,
+,,,,,
+NC18,Verify Customer Authority,Customer can't withdraw money from any account not associated to him,"1) Enter a valid data in all fields, but in the account no. field, enter an account no. is not associated to the customer  ",Accounts No. associated to the customer,"An error message ""Invalid Account No"" must shown"
+,,,"2) Click on the ""Submit"" button",,

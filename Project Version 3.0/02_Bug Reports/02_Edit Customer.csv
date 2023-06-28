@@ -1,0 +1,11 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail,Severity,Priority,Screenshot,Video
+NC40,Verify Submit Button ,"Manager successfully submit the customer data after entering valid data in the ""Edit Customer"" fields ","1) Edit the customer ""Address""",Accounts No. associated to the manager,The manager successfully edited the customer data,"The customer data successfully updated, but an error message ""No Changes made to Customer records"" shown",Fail,Major,Medium,https://ibb.co/tMRKN5S,https://drive.google.com/file/d/1fOelY9CgDkO3VNWdSFgpREnQKOxIKpqJ/view?usp=sharing
+,,,"2) Edit the customer ""City""",,,,,,,,
+,,,"3) Edit the customer ""State""",,,,,,,,
+,,,"4) Edit the customer ""PIN""",,,,,,,,
+,,,"5) Edit the customer ""Telephone Number""",,,,,,,,
+,,,"6) Edit the customer ""Email Id """,,,,,,,,
+,,,"7) Click on the ""Submit"" button ",,,,,,,,
+,,,,,,,,,,,
+NC41,Verify Submit Button ,Manager can't edit the customer data while all or any of the required fields is empty ,1) Don't enter any data in all the new account fields ,,An error message on all the required fields must shown,An error message on all the required fields must shown,Pass,,,,
+,,,"2) Click on the ""Submit"" button ",,,,,,,,

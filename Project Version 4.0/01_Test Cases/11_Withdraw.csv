@@ -1,0 +1,20 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC9,Verify Amount Field Field,Amount must be more than the customer balance ,1) Enter Account No.,,Manager/ Customer can successfully withdraw money from the specified account
+,,,"2)Enter valid amount number more than the customer balance in the ""Amount""",,
+,,,"3) Click on ""Submit"" ",,
+,,,,,
+NC10,Verify Amount Field Field,Amount can't be less than the customer balance ,1) Enter Account No.,,"An error message ""Transaction Failed. Account Balance Low!!!"" must shown"
+,,,"2) Enter valid amount number less than the customer balance in the ""Amount""",,
+,,,"3) Click on ""Submit"" ",,
+,,,,,
+NC13,Verify Submit Button ,Manager/ Customer submit the withdraw request after entering valid data in the all the fields ,1) Enter a valid data in all fields ,,Manager/ Customer can successfully withdraw money from the specified account
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC15,Verify Manager Authority,Manager can withdraw money from an associated account to him,"1) Enter a valid data in all fields, be sure that the account number is associated to the manager ",Accounts No. associated to the manager,Manager can successfully withdraw money from the specified account
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC17,Verify Customer Authority,Customer can withdraw money from his own accounts,"1) Enter a valid data in all fields, be sure that the account number is associated to the customer ",Accounts No. associated to the customer,Customer can successfully withdraw money from the specified account
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC18,Verify Customer Authority,Customer can't withdraw money from any account not associated to him,"1) Enter a valid data in all fields, but in the account no. field, enter an account no. is not associated to the customer ",Accounts No. associated to the customer,"An error message ""Invalid Account No"" must shown"
+,,,"2) Click on the ""Submit"" button ",,

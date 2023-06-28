@@ -1,0 +1,120 @@
+{
+	"id": "6672b5a2-5ea1-4c27-8872-314c40d54d37",
+	"name": "Guru99 Project - Gtpl Bank V4 Collection",
+	"timestamp": "2023-05-30T13:43:53.298Z",
+	"collection_id": "27505610-2b36c5d0-518d-48ac-a358-f5130b93de43",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-05-30T13:43:51.102Z",
+	"totalFail": 5,
+	"results": [
+		{
+			"id": "553351f1-535e-44de-baa9-e74c30bf298b",
+			"name": "GET last 5 transaction details from server",
+			"url": "http://demo.guru99.com/V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=1",
+			"time": 576,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"The content-type is present": true,
+				"The content of header is application/json": false,
+				"JSON schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The content-type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The content of header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"JSON schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				576
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"The content-type is present": true,
+					"The content of header is application/json": false,
+					"JSON schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "b13e3f22-d0be-4ddf-b357-270f2d90137f",
+			"name": "GET Balance from User Account",
+			"url": "http://demo.guru99.com/V4/sinkbalanceenquiry.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=",
+			"time": 200,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"The content-type is present": true,
+				"The content of header is application/json": false,
+				"JSON schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"The content-type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The content of header is application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"JSON schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"The content-type is present": true,
+					"The content of header is application/json": false,
+					"JSON schema is valid": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 776,
+	"collection": {
+		"requests": [
+			{
+				"id": "553351f1-535e-44de-baa9-e74c30bf298b",
+				"method": "GET"
+			},
+			{
+				"id": "b13e3f22-d0be-4ddf-b357-270f2d90137f",
+				"method": "GET"
+			}
+		]
+	}
+}

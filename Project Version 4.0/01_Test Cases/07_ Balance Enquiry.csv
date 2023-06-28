@@ -1,0 +1,6 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC5,Verify Balance Enquiry Submit Button ,Manager/ Customer can check the customer balance enquiry after entering valid account number ,1) Enter a valid account number ,,Manager/ Customer successfully can view the customer balance enquiry successfully 
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC12,Verify Customer Authority,Customer can view customer balance enquiry associated to him,1) Enter a customer account no. is associated to the customer ,Accounts No. associated to the customer,Customer can successfully view customer balance enquiry 
+,,,"2) Click on the ""Submit"" button ",,

@@ -1,0 +1,12 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC5,Verify Balance Enquiry Submit Button ,Manager/ Customer can check the customer balance enquiry after entering valid account number ,1) Enter a valid account number ,,Manager/ Customer successfully can view the customer balance enquiry successfully 
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC10,Verify Manager Authority,Manager can't view customer balance enquiry not associated to him,1) Enter a customer account no. is associated to the manager ,Accounts No. associated to the manager,"An error message ""Account does not exist"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC11,Verify Customer Authority,Customer can't view customer balance enquiry not associated to him,1) Enter a customer account no. is not associated to the customer ,,"An error message ""Account does not exist"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC12,Verify Customer Authority,Customer can view customer balance enquiry associated to him,1) Enter a customer account no. is associated to the customer ,Accounts No. associated to the customer,Customer can successfully view customer balance enquiry 
+,,,"2) Click on the ""Submit"" button ",,

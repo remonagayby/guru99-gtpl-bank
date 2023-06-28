@@ -1,0 +1,6 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC36,Verify New Customer E mail Field,Customer E mail not exist on the database ,"1) Enter valid E mail already exist the database in the ""E MAIL"" field",,"An error message ""E mail is already exist"" must shown"
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC40,Verify New Customer Submit Button ,Manager successfully submit the customer data after entering valid data in the New Customer fields ,1) Enter a valid data in all the new customer fields  ,,The manager successfully submited his data
+,,,"2) Click on the ""Submit"" button",,

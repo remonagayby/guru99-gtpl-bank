@@ -1,0 +1,6 @@
+TestCase#,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail,Severity,Priority,Screenshot,Video
+NC6,Verify Submit Button ,"Manager can delete customer after entering valid ""Customer ID""","1) Enter a valid ""Customer ID"" associated with the manager ",Accounts No. associated to the manager,The manager successfully delete the customer  ,"An error message ""Customer does not exist!!"" shown",Fail,Major,Medium,https://ibb.co/S6mwCLc,https://drive.google.com/file/d/1YW70DMSwTCYfJx39N3e1eLIIx2yWPiS7/view?usp=sharing
+,,,"2) Click on the ""Submit"" button ",,,,,,,,
+,,,,,,,,,,,
+NC11,Verify Manager Authority ,Manager can delete an inactive customer current or saving account associated to him,"1) Enter a valid inactive current or saving ""Customer ID"" account associated with the manager ",Accounts No. associated to the manager,"An error message ""Invalid Account No"" must shown","Not applicable to execute the test as there is no valid inactive ""Customer ID"" known",Pass,,,,
+,,,"2) Click on the ""Submit"" button ",,,,,,,,

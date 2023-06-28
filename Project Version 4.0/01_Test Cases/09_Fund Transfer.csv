@@ -1,0 +1,6 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC21,Verify Manger Authority,Manager can't make a fund transfer if the payers account no is the same as the payees account no,"1) Enter a valid ""Payers account no"" associated with the manager",Accounts No. associated to the manager,"An error message ""Payers account No and Payees account No Must Not be Same!!!"" must shown"
+,,,"2) Enter a valid ""Payees account no"" same as ""Payers account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,

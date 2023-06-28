@@ -1,0 +1,108 @@
+TestCase,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result
+NC1,Verify Payers Account Number,Payers Account Number accepts valid numbers,"1) Enter valid account number in ""Payers Account Number"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC2,Verify Payers Account Number,Payers Account Number cannot be empty,"1) Do not enter a value in ""Payers Account Number"" field",,"An error message ""Payers account number must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC3,Verify Payers Account Number,Payers Account Number can't contains special characters,"1) Enter any special characters the ""Payers Account Number"" field","!, @, #, $,","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC4,Verify Payers Account Number,Payers Account Number can't contains characters,"1) Enter any characters the ""Payers Account Number"" field","A, B, C, …","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, …",
+,,,,,
+NC5,Verify Payees Account Number,Payees Account Number accepts valid numbers,"1) Enter valid account number in ""Payees Account Number"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC6,Verify Payees Account Number,Payees Account Number cannot be empty,"1) Do not enter a value in ""Payees Account Number"" field",,"An error message ""Payees account number must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC7,Verify Payees Account Number,Payees Account Number can't contains special characters,"1) Enter any special characters the ""Payees Account Number"" field","!, @, #, $,","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC8,Verify Payees Account Number,Payees Account Number can't contains characters,"1) Enter any characters the ""Payees Account Number"" field","A, B, C, …","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, …",
+,,,,,
+NC9,Verify Amount Field,Amount field cannot be empty,"1) Do not enter a value in ""Amount"" field",,"An error message ""Amount must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC10,Verify Amount Field,Amount field can't contains characters,"1) Enter any characters the ""Amount"" field","A, B, C, …","An error message ""Characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"a, b, c, …",
+,,,,,
+NC11,Verify Amount Field,Amount field can't contains special characters,"1) Enter any special characters the ""Amount"" field","!, @, #, $,","An error message ""Special characters are not allowed"" must shown"
+,,,2) Press TAB and move to the next field,"%, ^, &, *",
+,,,,,
+NC12,Verify Amount Field,Amount field accepts valid numbers,"1) Enter valid amount in ""Amount"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC13,Verify Description Field,Description field cannot be empty,"1) Do not enter a value in ""Description"" field",,"An error message ""Description must not be blank"" must shown"
+,,,2) Press TAB and move to next field,,
+,,,,,
+NC14,Verify Description Field,Description field accepts valid characters,"1) Enter valid characters in ""Description"" field",,Manger/ Customer moved to the next field successfully without error message
+,,,2) Press TAB and move to the next field,,
+,,,,,
+NC15,Verify Submit Button ,"Manager/ Customer successfully submit the customer data after entering valid data in the ""Fund Transfer"" fields ","1) Enter a valid ""Payers account no"" ",,The manager/ customer successfully make a fund transfer
+,,,"2) Enter a valid ""Payees account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button",,
+,,,,,
+NC16,Verify Submit Button ,Manager/ Customer can't submit the customer data while all or any of the required fields is empty ,1) Don't enter any data in all the new account fields ,,"An error message ""Please fill all fields"" must shown"
+,,,"2) Click on the ""Submit"" button ",,
+,,,,,
+NC17,Verify Reset Button,Manger/ Customer can reset the customer data,"1) Leave the ""Payers account no"" field empty",,All the customer data entered in the fund transfer fields must be deleted 
+,,,"2) Enter a valid ""Payees account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Reset"" button ",,
+,,,,,
+NC18,Verify Reset Button,Nothing happen when clicking on reset button without entering any data in the New Account fields,1) Don't enter any data in all the new account fields ,,All the new account data fields remains empty
+,,,"2) Click on the ""Reset"" button ",,
+,,,,,
+NC19,Verify Manger Authority,Manager can make a fund transfer if the customer account associated with him,"1) Enter a valid ""Payers account no"" associated with the manager",Accounts No. associated to the manager,Manager successfully made a fund transfer
+,,,"2) Enter a valid ""Payees account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,
+,,,,,
+NC20,Verify Manger Authority,Manager can't make a fund transfer if the customer account associated with him,"1) Enter a valid ""Payers account no"" not associated with the manager ",,"An error message ""You are not authorize to do fund transfer!!"" must shown"
+,,,"2) Enter a valid ""Payees account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button",,
+,,,,,
+NC21,Verify Manger Authority,Manager can't make a fund transfer if the payers account no is the same as the payees account no,"1) Enter a valid ""Payers account no"" associated with the manager",Accounts No. associated to the manager,"An error message ""Invalid Transfer"" must shown"
+,,,"2) Enter a valid ""Payees account no"" same as ""Payers account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,
+,,,,,
+NC22,Verify Manger Authority,Manager can't make a fund transfer if the payers account not have enough balance ,"1) Enter a valid ""Payers account no"" associated with the manager",Accounts No. associated to the manager,"An error message ""You cant Transfer your account balance is low!!!"" must shown"
+,,,"2) Enter a valid ""Payees account no"" ",,
+,,,"3) Enter a valid ""Amount"" greater than the payers balance ",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,
+,,,,,
+NC23,Verify Customer Authority,Customer can make a fund transfer if the customer account id associated with him,"1) Enter a valid ""Payers account no"" associated with the customer ",Accounts No. associated to the customer ,Customer  successfully made a fund transfer
+,,,"2) Enter a valid ""Payees account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,
+,,,,,
+NC24,Verify Customer Authority,Customer can't  make a fund transfer if the customer account id associated with him,"1) Enter a valid ""Payers account no"" not associated with the customer ",,"An error message ""No details found for this accounts !!!"" must shown"
+,,,"2) Enter a valid ""Payees account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,
+,,,,,
+NC25,Verify Customer Authority,Customer can't make a fund transfer if the payers account no is the same as the payees account no,"1) Enter a valid ""Payers account no"" associated with the customer",Accounts No. associated to the customer ,"An error message ""Your Account Balance is low You cant Transfer Balance !!!"" must shown"
+,,,"2) Enter a valid ""Payees account no"" same as ""Payers account no""",,
+,,,"3) Enter a valid ""Amount""",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button ",,
+,,,,,
+NC26,Verify Customer Authority,Customer can't make a fund transfer if the payers account not have enough balance ,"1) Enter a valid ""Payers account no"" associated with the manager ",Accounts No. associated to the customer ,"An error message ""Your Account Balance is low You cant Transfer Balance !!!"" must shown"
+,,,"2) Enter a valid ""Payees account no"" ",,
+,,,"3) Enter a valid ""Amount"" greater than the payers balance ",,
+,,,"4) Enter a valid ""Description""",,
+,,,"5) Click on the ""Submit"" button",,
